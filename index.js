@@ -22,6 +22,11 @@ const db = admin.database();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Ruta GET para la raíz para comprobar que el servidor está en funcionamiento
+app.get('/', (req, res) => {
+  res.send('Servidor funcionando correctamente');
+});
+
 // Endpoint para recibir datos del perfil de usuario
 app.post('/data', (req, res) => {
   const userProfile = req.body;

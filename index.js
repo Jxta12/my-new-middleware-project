@@ -22,11 +22,6 @@ const db = admin.database();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Ruta base para confirmar que el servidor está funcionando
-app.get('/', (req, res) => {
-  res.send('Middleware is running!');
-});
-
 // Endpoint para recibir datos del perfil de usuario
 app.post('/data', (req, res) => {
   const userProfile = req.body;

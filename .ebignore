@@ -1,0 +1,13 @@
+NTUSER.DAT
+AppData/
+Temp/
+tmp/
+.git/
+.gitignore
+node_modules/
+npm-debug.log
+.idea/
+.vscode/
+.DS_Store
+*.log
+Thumbs.db

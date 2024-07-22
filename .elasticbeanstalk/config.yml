@@ -2,6 +2,12 @@ branch-defaults:
   default:
     environment: my-middleware-env
     group_suffix: null
+  main:
+    environment: my-middleware-env
+environment-defaults:
+  my-middleware-env:
+    branch: null
+    repository: null
 global:
   application_name: my-middleware-project
   branch: null
@@ -14,5 +20,5 @@ global:
   platform_version: null
   profile: null
   repository: null
-  sc: null
+  sc: git
   workspace_type: Application
